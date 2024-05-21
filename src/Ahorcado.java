@@ -20,7 +20,8 @@ public class Ahorcado {
 
         while (!palabraAdivinada && intentos < intentosMaximos) {
                                                         // Lo usamos cuando tenemos una palabra de chars
-            System.out.println("Palabra a adivinar: " + String.valueOf(letrasAdivinadas) + " (" + palabraSecreta.length() + " letras)");
+            System.out.println("Palabra a adivinar: " + String.valueOf(letrasAdivinadas) + 
+            " (" + palabraSecreta.length() + " letras)");
             System.out.println("Introduce una letra, por favor.");
 
             // Usamos el scanner para pedir una letra
@@ -45,7 +46,7 @@ public class Ahorcado {
 
             if(String.valueOf(letrasAdivinadas).equals(palabraSecreta)) {
                 palabraAdivinada = true;
-                System.out.println("Felicidades, has adivinado la palabra secreta: " + palabraSecreta);
+                System.out.println("Felicidades! Has adivinado la palabra secreta: " + palabraSecreta);
             }
 
         }
